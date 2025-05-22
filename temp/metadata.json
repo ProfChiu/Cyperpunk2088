@@ -1,4 +1,4 @@
 {
-  "name": "Alive App",
-  "description": "A simple app that displays the text 'I AM ALIVE'."
+  "name": "Interactive Alive App",
+  "description": "A simple app that displays 'I AM ALIVE' and features a button that changes color on click."
 }

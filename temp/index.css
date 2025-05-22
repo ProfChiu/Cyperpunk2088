@@ -8,12 +8,47 @@ body, html {
     font-family: Arial, sans-serif;
 }
 
+#app-container {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    text-align: center;
+}
+
 #app-container p {
     font-size: 3rem; /* Increased font size */
     color: #333;
-    text-align: center;
     padding: 20px;
     border-radius: 8px;
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 20px; /* Add some space below the message */
+}
+
+#color-change-button {
+    background-color: #007bff; /* Initial blue color */
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#color-change-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+#color-change-button:active {
+    transform: scale(0.98); /* Slight shrink effect on press */
+}
+
+#color-change-button.active {
+    background-color: #28a745; /* Green color when active */
+}
+
+#color-change-button.active:hover {
+    background-color: #1e7e34; /* Darker green on hover when active */
 }
